@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../db');
 
 router.get('/instructor', async (req, res) => {
-    const result = await db.query('SELECT * FROM student');
+    const result = await db.query('SELECT * FROM instructor');
     res.json(result.rows);
 })
 
